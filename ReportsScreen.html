@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-
+<script src="Reports.js"></script>
 <head>
   <meta charset="UTF-8">
-  <title>Home +Storage Inventory Control</title>
+  <title>Reports +Storage Inventory Control</title>
+
   
-  
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -18,31 +17,63 @@
  	<div class="login">
 		<div class="login-screen">
 			<div class="app-title">
-				
+	
 <!-- Form Name -->
-				<legend><b>+Storage Inventory Control</b></legend><p></p>
-				<legend><b>Home</b></legend><p></p>
+<legend><b>+Storage Inventory Control</b></legend><p></p>
+<legend><b>Reports</b></legend>
+<p>
+  
+</p> 
 
-			</div>
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="Search" class="form-control selectpicker" >
+      <option value=" " >Search by: </option>
+      <option>IdCustomer</option>
+      <option >Company</option>
+      <option >Product</option>
+      <option >Warehouse</option>
+      <option >Room</option>
+      <option >Aisle</option>
+      <option >Shelf</option>
+      <option >ProductType</option>
+      <option>Price</option>
+      <option >Brand</option>    
+    </select>
+  </div>
+</div>
+</div>
+<p></p>
+
+<!-- Text input--> <!-- Show the option choosed above--> 
+
+<div class="form-group">
+  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input  name="Search" placeholder="Search" class="form-control"  type="text">
+      </div>
+    </div>
+  </div>
+  <p></p>
 
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
-  <div class="col-md-4"> 
-  	<button type="submit" class="btn btn-warning" >Customer Registration <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Receiving Product <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Reports <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Logout <span class="glyphicon glyphicon-send"></span></button><p></p>
-
-
-</div>
+  <div class="col-md-4">
+    <button type="submit" id="Search" class="btn btn-warning" onclick="Search_Click()" onsubmit="Search_Click()" >Search<span class="glyphicon glyphicon-send"></span></button><p></p>  
+    <p></p>
+        <button type="submit" id="Cancel" class="btn btn-warning" onclick="Cancel_Click()" onsubmit="Cancel_Click()" >Cancel<span class="glyphicon glyphicon-send"></span></button><p></p> 
   </div>
-			</div>
-		</div>
-	</div>
-	
-</body>
-  
-</body>
-
-</html>
+</div>
+</form>
+</div>
+    </div>
+<CENTER>
+</body><!-- /.container -->

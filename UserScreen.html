@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en" >
-
+<script src="User.js"></script>
 <head>
   <meta charset="UTF-8">
   <title>Home +Storage Inventory Control</title>
@@ -29,10 +29,10 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4"> 
-  	<button type="submit" class="btn btn-warning" >Customer Registration <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Receiving Product <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Reports <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Logout <span class="glyphicon glyphicon-send"></span></button><p></p>
+  	<button type="submit" id="CustomerRegistration" class="btn btn-warning" onclick="CustomerRegistration_Click()" onsubmit="CustomerRegistration_Click()" >Customer Registration <span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit" id="OrderReceipt" class="btn btn-warning" onclick="OrderReceipt_Click()" onsubmit="OrderReceipt_Click()" >Receive Order <span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit" id="Reports" class="btn btn-warning" onclick="Reports_Click()" onsubmit="Reports_Click()" >Reports <span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit"id="Logout" class="btn btn-warning" onclick="Logout_Click()" onsubmit="Logout_Click()">Logout <span class="glyphicon glyphicon-send"></span></button><p></p>
 
 
 

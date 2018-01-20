@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en" >
-
+<script src="Login"></script>
 <head>
   <meta charset="UTF-8">
   <title>Login +Storage Inventory Control</title>
@@ -40,11 +40,12 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >OK <span class="glyphicon glyphicon-send"></span></button>
+		<button type="submit" id="OK" class="btn btn-warning" onclick="OK_Click()" onsubmit="OK_Click()" >OK<span class="glyphicon glyphicon-send"></span></button><p></p>
 </div>
-    <a class="login-link" href="#">Change Password</a>
+<!--<button type="submit" id="UserManager" class="btn btn-warning" onclick="UserManager_Click()" onsubmit="UserManager_Click()" >User Manager <span class="glyphicon glyphicon-send"></span></button><p></p>-->
+    <a class="login-link" href="ChangeUserPasswordScreen.html">Change Password</a>
   </div>
-  <a class="login-link" href="#">Forgot your password?</a>
+  <a class="login-link" href="LostPasswordScreen.html">Forgot your password?</a>
 </div>
 			</div>
 		</div>

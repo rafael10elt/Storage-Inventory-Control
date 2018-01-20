@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en" >
-
+<script src="UserManager.js"></script>
 <head>
   <meta charset="UTF-8">
   <title>User Manager +Storage Inventory Control</title>
@@ -29,13 +28,11 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >Create new user <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Edit user<span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Delete user <span class="glyphicon glyphicon-send"></span></button><p></p>
- 
-
-
-
+    <button type="submit" id="CreateNewUser" class="btn btn-warning" onclick="CreateNewUser_Click()" onsubmit="CreateNewUser_Click()" >Create new user <span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit" id="EditUser" class="btn btn-warning" onclick="EditUser_Click()" onsubmit="EditUser_Click()">Edit user<span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit" id="DeleteUser" class="btn btn-warning" onclick="DeleteUser_Click()" onsubmit="DeleteUser_Click()" >Delete user <span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit" id="BackPage" class="btn btn-warning" onclick="BackPage_Click()" onsubmit="BackPage_Click()" >Back <span class="glyphicon glyphicon-send"></span></button><p></p>
+  
 </div>
   </div>
 			</div>

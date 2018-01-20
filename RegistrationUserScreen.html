@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" >
-
+<script src="RegistrationUser.js"></script>
 <head>
   <meta charset="UTF-8">
   <title>User Registration +Storage Inventory Control</title>
   
   
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   
 </head>
 
 <body>
-<CENTER>
- 
-<div class="container">
-
-  <link rel="stylesheet" href="css/style.css">
-
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
-      </head>
-
-<body>
 
   <body>
-  <div class="login">
-    <div class="login-screen">
-      <div class="app-title">
+ 	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				
 <!-- Form Name -->
 <legend><b>+Storage Inventory Control</b></legend><p></p>
 <legend><b>User Registration</b></legend>
@@ -106,8 +97,8 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >Save <span class="glyphicon glyphicon-send"></span></button><p></p>
-    <button type="submit" class="btn btn-warning" >Cancel <span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit" id="SaveUser" class="btn btn-warning" onclick="SaveUser_Click()" onsubmit="SaveUser_Click()" >Save <span class="glyphicon glyphicon-send"></span></button><p></p>
+    <button type="submit" id="Cancel" class="btn btn-warning" onclick="Cancel_Click()" onsubmit="Cancel_Click()" >Cancel<span class="glyphicon glyphicon-send"></span></button><p></p> 
     <button type="reset" class="btn btn-warning" >Reset <span class="glyphicon glyphicon-send"></span></button><p></p>
   </div>
 </div>
