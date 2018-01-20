@@ -18,15 +18,16 @@ CREATE TABLE CUSTOMERS(
 IdCustomer int primary key not null identity(100,1),
 CompanyName varchar(100) not null,
 BIN varchar(20),
-Email varchar(50),
-Phone varchar(20),
-Address varchar(150),
+Email varchar(50) not null,
+Phone varchar(20) not null,
+Address varchar(150) not null,
 City varchar(50)not null,
 Province varchar(50) not null,
 PostalCode varchar(10),
 RegistrationDateCustomer date
 );
 
+ALTER TABLE CUSTOMERS alter column Address varchar(50) not null;
 ALTER TABLE CUSTOMERS ADD IdUser int references USERS;
 ALTER TABLE CUSTOMERS ADD IdOrder int references ORDERS;
 
