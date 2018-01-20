@@ -5,10 +5,10 @@ UserFirstName varchar(255) not null,
 UserLastName varchar(255) not null,
 UserJobTitle varchar(50),
 UserPhone varchar(30),
-UserLogin varchar(30) unique not null,
 UserPassword varchar(30) not null
 );
 
+ALTER TABLE USERS drop column UserLogin;
 ALTER TABLE USERS ADD IdCustomer int references CUSTOMERS;
 ALTER TABLE USERS ADD IdOrder int references ORDERS;
 
