@@ -27,7 +27,7 @@ PostalCode varchar(10),
 RegistrationDateCustomer date
 );
 
-ALTER TABLE CUSTOMERS alter column Address varchar(50) not null;
+ALTER TABLE CUSTOMERS alter column PostalCode varchar(10) not null;
 ALTER TABLE CUSTOMERS ADD IdUser int references USERS;
 ALTER TABLE CUSTOMERS ADD IdOrder int references ORDERS;
 
